@@ -1,0 +1,25 @@
+@use "sass:map";
+/* @use "../node_modules/bootstrap/scss/bootstrap.scss"; */
+/* @use "../node_modules/bootstrap/dist/css/bootstrap.css"; */
+@import '../node_modules/@fontsource/roboto/300.css';
+@import '../node_modules/@fontsource/roboto/400.css';
+@import '../node_modules/@fontsource/roboto/500.css';
+@import '../node_modules/@fontsource/roboto/700.css';
+
+
+/* https://stackoverflow.com/questions/38377062/how-to-make-html-button-look-pressed-in-using-css */
+input.btn, button.btn {
+  box-shadow: 5px 5px 2px lightgray;
+  margin: 4px 10px 4px 10px;
+  border: 3px outset #9d9898; /*black borders destroy the outset effect in Chrome/Chromium */
+}
+input.btn:active, button.btn:active {
+  box-shadow: 0 0 0 white !important;
+  margin: 6px 10px 2px 10px !important;
+}
+
+#draggable-dialog-title {cursor: grab !important;}
+
+#draggable-dialog-title:active {cursor: grabbing !important;}
+
+.MuiPaper-root {width: 50em;}
